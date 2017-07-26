@@ -1,4 +1,4 @@
-# Unordered Map
+##### Unordered Map (C++ 11)
 * unordered_map<string, string> hash;
 * hash.insert(pair<string, string>)
 * hash.insert(another_hash.begin(), another_hash.end())
