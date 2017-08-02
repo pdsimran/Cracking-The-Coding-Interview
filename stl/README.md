@@ -21,3 +21,10 @@
 * string str
 * str(length, char) // make string with repeating 'char' of 'length'. 
 * str.length()
+* str.replace(pos, len, new_str)
+
+
+##### Vector
+* vector<int> vect
+* vect.resize(size)
+* vect.resize(size, value)
