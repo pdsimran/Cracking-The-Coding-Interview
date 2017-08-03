@@ -19,10 +19,11 @@
 
 ##### String
 * string str
+* string str("some string") // initialization
 * str(length, char) // make string with repeating 'char' of 'length'. 
 * str.length()
 * str.replace(pos, len, new_str)
-
+* str.push_back(char)
 
 ##### Vector
 * vector<int> vect
