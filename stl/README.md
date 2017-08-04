@@ -29,3 +29,6 @@
 * vector<int> vect
 * vect.resize(size)
 * vect.resize(size, value)
+
+##### include<cstdlib>
+* abs(value)
