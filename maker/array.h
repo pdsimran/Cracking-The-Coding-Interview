@@ -7,7 +7,7 @@ using namespace std;
 
 int * make_array(int size, int min = INT_MIN/2, int max = INT_MAX/2){
 	int * output;
-	srand (time(NULL));
+	srand (clock());
 
 	output = (int *)malloc(size*sizeof(int));
 	for(int i = 0; i < size; i++ ){
@@ -26,7 +26,7 @@ bool is_unique(int * output, int size, int value){
 
 int * make_array_unique(int size, int min = INT_MIN/2, int max = INT_MAX/2){
 	int * output;
-	srand (time(NULL));
+	srand (clock());
 	int value;
 
 	output = (int *)malloc(size*sizeof(int));
