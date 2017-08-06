@@ -59,6 +59,42 @@ list * list_addition(list * head, int value){
   return head;
 }
 
+// optimised but change the list.
+list * list_reverse_iterative(list * head){
+  list * previous = NULL;
+  list * current = head;
+  list * next;
+
+  while(current){
+    next = current->next;
+    current->next = previous;
+    previous = current;
+    current = next;
+  }
+  return previous;
+}
+
+// not optimised but won't change the list
+list * list_reverse(list * head){
+  if(!head) return NULL;
+  if(!head->next) {
+    list * new_node = (list *)malloc(sizeof(list));
+    new_node->value = head->value;
+    new_node->next = NULL;
+    return new_node;
+  }
+  list * reverse = list_reverse(head->next);
+  list * current = reverse;
+  while(current->next){
+    current = current->next;
+  }
+  list * new_node = (list *)malloc(sizeof(list));
+  new_node->value = head->value;
+  new_node->next = NULL;
+  current->next = new_node;
+  return reverse;
+}
+
 bool list_find(list * head, int value){
   list * current = head;
   while(current){
