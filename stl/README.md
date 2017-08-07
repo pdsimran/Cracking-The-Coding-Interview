@@ -30,5 +30,15 @@
 * vect.resize(size)
 * vect.resize(size, value)
 
+##### Stack
+* stack<int> my_stack;
+* my_stack.push(value);
+* my_stack.pop();	// void return;
+* my_stack.top();   // return a refrence to the top_element of the stack. Reference can be used to access or modify the top element. throws segmentation fault is stack is empty()
+* my_stack.size();
+* my_stack.empty();
+
+
+
 ##### include<cstdlib>
 * abs(value)
