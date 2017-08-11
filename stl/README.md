@@ -42,3 +42,8 @@
 
 ##### include<cstdlib>
 * abs(value)
+
+##### include<climits>
+* INT_MIN
+* INT_MAX
+
