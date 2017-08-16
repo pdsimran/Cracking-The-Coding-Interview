@@ -27,6 +27,7 @@
 
 ##### Vector
 * vector<int> vect
+* vector<int> vect(array, array+size)
 * vect.resize(size)
 * vect.resize(size, value)
 
@@ -38,7 +39,10 @@
 * my_stack.size();
 * my_stack.empty();
 
-
+##### include<algorithm>
+* sort(vect.begin(), vect.end())
+* sort(vect.begin(), vect.end(), comp_fun)
+* sort(vect.begin(), vect.end(), comp_object)
 
 ##### include<cstdlib>
 * abs(value)
